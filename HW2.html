@@ -3,34 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>作業2</title>
-    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+        crossorigin="anonymous">
 
-    <body>
-       enter the currect enswer to see my friend
-       <br>
-       1+2=<br>
-       <input type="text" name="A">
-       <a href="kadysz-1.jpg" class="btn btn-primary">對嗎?</a>
-       
-        <div class="homepage-hero-module">
-            <div class="video-container">
-                <div class="filter"></div>
-                <video autoplay loop class="fillWidth">
-                    <source src="Puppy.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                    <source src="Puppy.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                </video>
-                <div class="poster hidden">
-                    <img src="Puppy.jpg" alt="">
-                </div>
+    <script language=javascript>
+           var sum=function(){
+               var a = $('#A').val();
+               if(a==3){
+                   document.write('<img src="kadysz-1.jpg" onload="if(this.width>400)this.width=400">');
+               }
+               else{
+                   console.log(b="wrong!")
+               }
+            $('#output').text(b);
+           }
+           
+       </script>
+</head>
+
+<body>
+    enter the currect enswer to see my friend
+    <br> 1+2=
+    <br>
+    <input type="text" id="A">
+    <a href="#" onclick="sum();" class="btn btn-primary">right?</a>
+    <span id="output"></span>
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="Puppy.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="Puppy.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <div class="poster hidden">
+                <img src="Puppy.jpg" alt="">
             </div>
         </div>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 
-    </body>
+</body>
 
 </html>
